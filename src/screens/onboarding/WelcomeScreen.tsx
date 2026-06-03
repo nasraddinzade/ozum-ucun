@@ -154,8 +154,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    width: 240,
-    height: 200,
+    width: 300,
+    height: 250,
   },
   subtitle: {
     fontFamily: FontFamily.serif,

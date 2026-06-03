@@ -201,8 +201,8 @@ const styles = StyleSheet.create({
     color: Colors.error,
   },
   aboutLogo: {
-    width: 120,
-    height: 100,
+    width: 170,
+    height: 142,
     alignSelf: 'center',
     marginBottom: Spacing[2],
   },

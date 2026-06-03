@@ -137,9 +137,9 @@
     "noBadges": "Hələ heç bir nişan yoxdur. Modulları tamamla.",
     "heart": {
       "title": "Ürəyin vəziyyəti",
-      "broken": "Sınıq ürək",
-      "healing": "Sağalan ürək",
-      "whole": "Tam ürək"
+      "broken": "Yenicə oyanan ürək",
+      "healing": "Böyüyən ürək",
+      "whole": "Bütöv ürək"
     },
     "levels": {
       "1": "Yad",
