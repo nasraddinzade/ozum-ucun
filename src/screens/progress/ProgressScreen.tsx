@@ -164,7 +164,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: Colors.border,
   },
-  heartInfo: {gap: Spacing[2]},
+  heartInfo: {gap: Spacing[2], flex: 1},
   heartTitle: {
     fontFamily: FontFamily.sansCondensed,
     fontSize: FontSize.xs,
