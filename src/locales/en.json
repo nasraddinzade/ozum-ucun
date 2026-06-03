@@ -1,0 +1,234 @@
+{
+  "app": {
+    "title": "For Myself",
+    "tagline": "Know yourself. Choose yourself.",
+    "subtitle": "Know yourself. Choose yourself."
+  },
+  "nav": {
+    "modules": "Modules",
+    "journal": "Journal",
+    "progress": "Progress",
+    "checkin": "Check-in",
+    "settings": "Settings"
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "For Myself",
+      "subtitle": "Know yourself. Choose yourself.",
+      "body": "This app is for you — to understand yourself, find meaning, and learn the art of loving.",
+      "cta": "Begin"
+    },
+    "orientation": {
+      "title": "What is your relationship with meaning right now?",
+      "subtitle": "Be honest. There is no correct answer here.",
+      "options": {
+        "searching": "I'm searching for it",
+        "struggling": "I'm struggling with it",
+        "found": "I think I found it",
+        "confused": "I'm still confused"
+      }
+    },
+    "painPoint": {
+      "title": "What brought you here?",
+      "subtitle": "This helps us suggest where to begin.",
+      "options": {
+        "love": "About love and relationships",
+        "meaning": "About finding meaning",
+        "freedom": "About fear and freedom",
+        "self": "About understanding myself"
+      }
+    },
+    "commitment": {
+      "title": "How often can you practice?",
+      "subtitle": "Be realistic — consistency beats intensity.",
+      "options": {
+        "daily": "Every day",
+        "thrice": "3 times a week",
+        "weekly": "Weekly",
+        "whenever": "Whenever I can"
+      }
+    },
+    "startingPoint": {
+      "title": "Where would you like to begin?",
+      "subtitle": "We suggest based on what brought you here.",
+      "suggested": "Suggested for you",
+      "cta": "I'm ready. Let's begin."
+    }
+  },
+  "modules": {
+    "title": "Modules",
+    "subtitle": "The Art of Loving — Erich Fromm",
+    "completed": "Completed",
+    "locked": "Locked",
+    "current": "In progress",
+    "startModule": "Start Module",
+    "continueModule": "Continue",
+    "conceptCard": "Concept Card",
+    "reflection": "Reflection",
+    "practice": "Daily Practice",
+    "quiz": "Scenario Quiz",
+    "readTime": "{{min}} min read",
+    "xpReward": "+{{xp}} XP"
+  },
+  "reflection": {
+    "title": "Reflection",
+    "placeholder": "Your thoughts have a place here...",
+    "save": "Save",
+    "saved": "Saved",
+    "prompt_hint": "Be open. This is yours alone.",
+    "min_chars": "Start with at least {{n}} characters"
+  },
+  "practice": {
+    "title": "Daily Practice",
+    "complete": "I completed this practice",
+    "completed": "Completed",
+    "reminder": "Today's practice",
+    "duration": "Under 15 minutes"
+  },
+  "quiz": {
+    "title": "Scenario Quiz",
+    "question": "Question {{n}}",
+    "correct": "Correct.",
+    "incorrect": "Not quite — but think about it...",
+    "explanation": "Explanation:",
+    "next": "Next",
+    "finish": "Finish",
+    "score": "Score: {{score}}/{{total}}"
+  },
+  "journal": {
+    "title": "Journal",
+    "empty": "No entries yet. Complete modules to fill your journal.",
+    "filter": {
+      "all": "All",
+      "module": "By module",
+      "date": "By date"
+    },
+    "search": "Search your journal...",
+    "pastSelf": "You, 30 days ago",
+    "export": "Export all data",
+    "reread": "Revisit the past",
+    "noOldEntry": "No entry found from 30 days ago."
+  },
+  "checkin": {
+    "title": "Daily Check-in",
+    "morning": {
+      "title": "Morning check-in",
+      "question": "How open is your heart today?",
+      "scale": ["Completely closed", "Slightly open", "Halfway", "Quite open", "Fully open"]
+    },
+    "evening": {
+      "title": "Evening check-in",
+      "question": "Did you love today? How?",
+      "placeholder": "One or two sentences is enough..."
+    },
+    "submit": "Save",
+    "alreadyDone": "You've already checked in today. Come back tomorrow.",
+    "streak": "{{n}}-day streak"
+  },
+  "progress": {
+    "title": "Your Progress",
+    "level": "Level {{n}}",
+    "xp": "{{xp}} XP",
+    "xpToNext": "{{xp}} XP to next level",
+    "streak": "{{n}}-day streak",
+    "longestStreak": "Longest streak: {{n}} days",
+    "modulesCompleted": "{{n}}/10 modules completed",
+    "badges": "Badges",
+    "noBadges": "No badges yet. Complete modules to earn them.",
+    "heart": {
+      "title": "State of your heart",
+      "broken": "Fractured heart",
+      "healing": "Healing heart",
+      "whole": "Whole heart"
+    },
+    "levels": {
+      "1": "Stranger",
+      "2": "Student",
+      "3": "Practitioner",
+      "4": "Artist of Love"
+    },
+    "levelDescriptions": {
+      "1": "Just beginning to see",
+      "2": "Learning the language",
+      "3": "Practice shapes me",
+      "4": "I know how to love"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageOptions": {
+      "az": "Azərbaycan dili",
+      "en": "English",
+      "ru": "Русский"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "daily": "Daily reminder",
+      "time": "Reminder time"
+    },
+    "data": {
+      "title": "Your Data",
+      "export": "Export all data",
+      "delete": "Delete all data",
+      "deleteWarning": "This cannot be undone. All journal entries, progress, and badges will be permanently deleted.",
+      "deleteConfirm": "Delete",
+      "deleteCancel": "Cancel"
+    },
+    "about": {
+      "title": "About",
+      "description": "\"Özüm üçün\" — a philosophical self-discovery movement for Azerbaijani speakers.",
+      "youtube": "YouTube Channel",
+      "instagram": "Instagram",
+      "version": "Version {{version}}"
+    }
+  },
+  "badges": {
+    "courage": {
+      "name": "Courage",
+      "description": "You answered a vulnerable question"
+    },
+    "streak7": {
+      "name": "7 Days",
+      "description": "You reflected for 7 consecutive days"
+    },
+    "streak30": {
+      "name": "30 Days",
+      "description": "You practiced for 30 consecutive days"
+    },
+    "artistOfLove": {
+      "name": "Artist of Love",
+      "description": "You now choose to love"
+    },
+    "activeListener": {
+      "name": "Active Listener",
+      "description": "You learned the art of listening"
+    },
+    "unconditionalGiver": {
+      "name": "Unconditional Giver",
+      "description": "You gave without expecting return"
+    },
+    "selfRespect": {
+      "name": "Self-Respect",
+      "description": "You chose to respect yourself"
+    }
+  },
+  "common": {
+    "back": "Back",
+    "next": "Next",
+    "skip": "Skip",
+    "done": "Done",
+    "save": "Save",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try again"
+  },
+  "quotes": {
+    "fromm1": "Love is not a feeling — it is an art.",
+    "fromm2": "The main problem of love is not being loved, but loving.",
+    "fromm3": "Man seeks union because he fears his aloneness.",
+    "fromm4": "Loving oneself is the condition for loving others.",
+    "fromm5": "Love is setting free, not possessing."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Özüm üçün",
+    "slug": "ozum-ucun",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "ozumucun",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A0A10"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F2E3D0"
+      },
+      "package": "com.ozumucun.app",
+      "versionCode": 1,
+      "minSdkVersion": 26,
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.SCHEDULE_EXACT_ALARM",
+        "android.permission.POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-notifications",
+        {
+          "color": "#4A1A2C",
+          "sounds": []
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b1026e77-83a0-4a38-907d-b75d016800e8"
+      }
+    },
+    "owner": "ramin98"
+  }
+}

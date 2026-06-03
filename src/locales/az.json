@@ -1,0 +1,234 @@
+{
+  "app": {
+    "title": "Özüm üçün",
+    "tagline": "Özünü tanı. Özünü seç.",
+    "subtitle": "Özünü tanı. Özünü seç."
+  },
+  "nav": {
+    "modules": "Modullar",
+    "journal": "Gündəlik",
+    "progress": "İrəliləyiş",
+    "checkin": "Günlük",
+    "settings": "Parametrlər"
+  },
+  "onboarding": {
+    "welcome": {
+      "title": "Özüm üçün",
+      "subtitle": "Özünü tanı. Özünü seç.",
+      "body": "Bu tətbiq sənin üçündür — özünü başa düşmək, mənaya çatmaq və sevmə sənətini öyrənmək üçün.",
+      "cta": "Başla"
+    },
+    "orientation": {
+      "title": "Mənaya münasibətin nədir?",
+      "subtitle": "Dürüst cavab ver. Burada mükəmməl cavab yoxdur.",
+      "options": {
+        "searching": "Axtarıram",
+        "struggling": "Mübarizə aparıram",
+        "found": "Tapdım, düşünürəm",
+        "confused": "Hələ anlamadım"
+      }
+    },
+    "painPoint": {
+      "title": "Seni buraya nə gətirdi?",
+      "subtitle": "Bu seçim sənə uyğun modulları göstərəcək.",
+      "options": {
+        "love": "Sevgi və münasibətlər haqqında",
+        "meaning": "Məna tapmaq haqqında",
+        "freedom": "Qorxu və azadlıq haqqında",
+        "self": "Özümü anlamaq haqqında"
+      }
+    },
+    "commitment": {
+      "title": "Nə qədər məşq edə bilərsən?",
+      "subtitle": "Dürüst ol — az da olsa, mütəmadi daha yaxşıdır.",
+      "options": {
+        "daily": "Hər gün",
+        "thrice": "Həftədə 3 dəfə",
+        "weekly": "Həftəlik",
+        "whenever": "Bacardığım vaxt"
+      }
+    },
+    "startingPoint": {
+      "title": "Haradan başlamaq istəyirsən?",
+      "subtitle": "Ağrı nöqtənə əsasən tövsiyə edirik.",
+      "suggested": "Tövsiyə edilir",
+      "cta": "Hazıram. Başlayaq."
+    }
+  },
+  "modules": {
+    "title": "Modullar",
+    "subtitle": "Sevmək Sənəti — Erich Fromm",
+    "completed": "Tamamlandı",
+    "locked": "Kilidli",
+    "current": "Davam edir",
+    "startModule": "Modulu başlat",
+    "continueModule": "Davam et",
+    "conceptCard": "Anlayış Kartı",
+    "reflection": "Düşüncə",
+    "practice": "Məşq",
+    "quiz": "Sınaq",
+    "readTime": "{{min}} dəqiqə oxuma",
+    "xpReward": "+{{xp}} XP"
+  },
+  "reflection": {
+    "title": "Düşüncə",
+    "placeholder": "Fikirlərin burada yerini tutur...",
+    "save": "Yadda saxla",
+    "saved": "Saxlanıldı",
+    "prompt_hint": "Açıq ol. Bu yalnız sənindir.",
+    "min_chars": "Ən azı {{n}} hərfdən başla"
+  },
+  "practice": {
+    "title": "Günlük Məşq",
+    "complete": "Məşqi tamamladım",
+    "completed": "Tamamlandı",
+    "reminder": "Bu gün üçün bir məşq",
+    "duration": "15 dəqiqədən az"
+  },
+  "quiz": {
+    "title": "Sınaq",
+    "question": "Sual {{n}}",
+    "correct": "Düzgün!",
+    "incorrect": "Deyil, amma düşün...",
+    "explanation": "İzah:",
+    "next": "Növbəti",
+    "finish": "Bitir",
+    "score": "Nəticə: {{score}}/{{total}}"
+  },
+  "journal": {
+    "title": "Gündəlik",
+    "empty": "Hələ heç bir qeyd yoxdur. Modulları tamamlayaraq gündəliyini doldur.",
+    "filter": {
+      "all": "Hamısı",
+      "module": "Modullar üzrə",
+      "date": "Tarix üzrə"
+    },
+    "search": "Gündəlikdə axtar...",
+    "pastSelf": "30 gün əvvəlki sən",
+    "export": "Məlumatları ixrac et",
+    "reread": "Keçmişə bax",
+    "noOldEntry": "30 gün əvvəl heç bir qeyd tapılmadı."
+  },
+  "checkin": {
+    "title": "Günlük Yoxlama",
+    "morning": {
+      "title": "Sabah yoxlaması",
+      "question": "Bu gün ürəyin nə qədər açıqdır?",
+      "scale": ["Tam bağlı", "Az açıq", "Orta", "Xeyli açıq", "Tam açıq"]
+    },
+    "evening": {
+      "title": "Axşam yoxlaması",
+      "question": "Bu gün sevdin mi? Necə?",
+      "placeholder": "Bir-iki cümlə kifayətdir..."
+    },
+    "submit": "Yadda saxla",
+    "alreadyDone": "Bu gün artıq doldurdun. Sabah qayıt.",
+    "streak": "{{n}} günlük seriya"
+  },
+  "progress": {
+    "title": "İrəliləyişin",
+    "level": "Səviyyə {{n}}",
+    "xp": "{{xp}} XP",
+    "xpToNext": "Növbəti səviyyəyə {{xp}} XP",
+    "streak": "{{n}} günlük seriya",
+    "longestStreak": "Ən uzun seriya: {{n}} gün",
+    "modulesCompleted": "{{n}}/10 modul tamamlandı",
+    "badges": "Nişanlar",
+    "noBadges": "Hələ heç bir nişan yoxdur. Modulları tamamla.",
+    "heart": {
+      "title": "Ürəyin vəziyyəti",
+      "broken": "Sınıq ürək",
+      "healing": "Sağalan ürək",
+      "whole": "Tam ürək"
+    },
+    "levels": {
+      "1": "Yad",
+      "2": "Tələbə",
+      "3": "Praktikant",
+      "4": "Sevgi Ustası"
+    },
+    "levelDescriptions": {
+      "1": "Hələ görmürsən",
+      "2": "Dili öyrənirsən",
+      "3": "Məşq seni şəkillendirir",
+      "4": "Sevməyi bilirsən"
+    }
+  },
+  "settings": {
+    "title": "Parametrlər",
+    "language": "Dil",
+    "languageOptions": {
+      "az": "Azərbaycan dili",
+      "en": "English",
+      "ru": "Русский"
+    },
+    "notifications": {
+      "title": "Bildirişlər",
+      "daily": "Günlük xatırlatma",
+      "time": "Xatırlatma vaxtı"
+    },
+    "data": {
+      "title": "Məlumatlar",
+      "export": "Bütün məlumatları ixrac et",
+      "delete": "Bütün məlumatları sil",
+      "deleteWarning": "Bu əməliyyat geri qaytarıla bilməz. Bütün gündəlik qeydlərin, irəliləyişin və nişanların silinəcək.",
+      "deleteConfirm": "Sil",
+      "deleteCancel": "Ləğv et"
+    },
+    "about": {
+      "title": "Haqqında",
+      "description": "\"Özüm üçün\" — azərbaycan dilli fəlsəfi özüöyrənmə hərəkatı.",
+      "youtube": "YouTube kanalı",
+      "instagram": "Instagram",
+      "version": "Versiya {{version}}"
+    }
+  },
+  "badges": {
+    "courage": {
+      "name": "Cəsarət",
+      "description": "Zəif bir suala cavab verdin"
+    },
+    "streak7": {
+      "name": "7 Günlük",
+      "description": "7 gün ardıcıl düşündün"
+    },
+    "streak30": {
+      "name": "30 Günlük",
+      "description": "30 gün ardıcıl məşq etdin"
+    },
+    "artistOfLove": {
+      "name": "Sevgi Ustası",
+      "description": "Sən artıq sevməyi seçirsən"
+    },
+    "activeListener": {
+      "name": "Aktiv Dinləyici",
+      "description": "Dinləmənin sənətini öyrəndin"
+    },
+    "unconditionalGiver": {
+      "name": "Şərtsiz Verən",
+      "description": "Gözləmədən verdin"
+    },
+    "selfRespect": {
+      "name": "Öz-hörmət",
+      "description": "Özünə hörmət etməyi seçdin"
+    }
+  },
+  "common": {
+    "back": "Geri",
+    "next": "İrəli",
+    "skip": "Keç",
+    "done": "Tamamlandı",
+    "save": "Saxla",
+    "cancel": "Ləğv et",
+    "loading": "Yüklənir...",
+    "error": "Xəta baş verdi",
+    "retry": "Yenidən cəhd et"
+  },
+  "quotes": {
+    "fromm1": "Sevmək bir hissiyyat deyil — bu bir sənətdir.",
+    "fromm2": "Sevginin əsas problemi sevilmək deyil, sevməkdir.",
+    "fromm3": "İnsan yalnızlıqdan qorxduğu üçün birliyi axtarır.",
+    "fromm4": "Özünü sevmək başqasını sevməyin şərtidir.",
+    "fromm5": "Sevgi azad etməkdir, sahib olmaq deyil."
+  }
+}
