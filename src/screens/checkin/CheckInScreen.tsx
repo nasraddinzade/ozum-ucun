@@ -25,6 +25,12 @@ export default function CheckInScreen() {
   const [savingMorning, setSavingMorning] = useState(false);
   const [savingEvening, setSavingEvening] = useState(false);
 
+  // i18next returns a joined string for array keys unless returnObjects is set.
+  const scaleLabels = t('checkin.morning.scale', {returnObjects: true}) as string[];
+  function scaleLabel(score: number): string {
+    return Array.isArray(scaleLabels) ? scaleLabels[score - 1] ?? '' : '';
+  }
+
   useEffect(() => {
     loadCheckin();
   }, []);
@@ -71,7 +77,7 @@ export default function CheckInScreen() {
                   {todayCheckin?.morning_score}/5
                 </Text>
                 <Text style={styles.completedLabel}>
-                  {t('checkin.morning.scale')[(todayCheckin?.morning_score ?? 3) - 1]}
+                  {scaleLabel(todayCheckin?.morning_score ?? 3)}
                 </Text>
               </View>
             ) : (
@@ -94,7 +100,7 @@ export default function CheckInScreen() {
                 </View>
                 {morningScore && (
                   <Text style={styles.scaleLabel}>
-                    {t(`checkin.morning.scale`)[morningScore - 1]}
+                    {scaleLabel(morningScore)}
                   </Text>
                 )}
                 <Button

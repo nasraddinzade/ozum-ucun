@@ -9,6 +9,7 @@ import CheckInScreen from '../screens/checkin/CheckInScreen';
 import ProgressScreen from '../screens/progress/ProgressScreen';
 import SettingsScreen from '../screens/settings/SettingsScreen';
 import {useTranslation} from 'react-i18next';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const Tab = createBottomTabNavigator<MainTabParams>();
 
@@ -35,12 +36,19 @@ function TabIcon({
 
 export default function MainNavigator() {
   const {t} = useTranslation();
+  const insets = useSafeAreaInsets();
+
+  // Lift the tab bar above the Android system navigation (gesture bar / 3-button).
+  const tabBarStyle = [
+    styles.tabBar,
+    {height: 64 + insets.bottom, paddingBottom: insets.bottom + 8},
+  ];
 
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarStyle: styles.tabBar,
+        tabBarStyle,
         tabBarShowLabel: false,
       }}>
       <Tab.Screen
