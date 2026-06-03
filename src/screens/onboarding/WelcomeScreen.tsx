@@ -5,6 +5,7 @@ import {
   StyleSheet,
   TouchableOpacity,
   Modal,
+  Image,
 } from 'react-native';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {OnboardingStackParams} from '../../navigation/types';
@@ -55,7 +56,11 @@ export default function WelcomeScreen({navigation}: Props) {
         {/* Main content */}
         <View style={styles.content}>
           <View style={styles.titleBlock}>
-            <Text style={styles.titleAz}>Özüm üçün</Text>
+            <Image
+              source={require('../../../assets/logo.png')}
+              style={styles.logo}
+              resizeMode="contain"
+            />
             <Text style={styles.subtitle}>{t('app.tagline')}</Text>
           </View>
 
@@ -146,18 +151,18 @@ const styles = StyleSheet.create({
   },
   titleBlock: {
     gap: Spacing[3],
+    alignItems: 'center',
   },
-  titleAz: {
-    fontFamily: FontFamily.serifBold,
-    fontSize: FontSize['4xl'],
-    color: Colors.cream,
-    letterSpacing: -1,
+  logo: {
+    width: 240,
+    height: 200,
   },
   subtitle: {
     fontFamily: FontFamily.serif,
     fontSize: FontSize.lg,
     color: Colors.terracotta,
     letterSpacing: 0.5,
+    textAlign: 'center',
   },
   divider: {
     width: 40,

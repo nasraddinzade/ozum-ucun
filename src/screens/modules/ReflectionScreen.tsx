@@ -66,7 +66,7 @@ export default function ReflectionScreen({navigation, route}: Props) {
     setSaved(true);
     setSaving(false);
 
-    if (seed.isVulnerablePrompt) {
+    if (seed?.isVulnerablePrompt) {
       shieldOpacity.value = withTiming(1, {duration: 500});
       setTimeout(() => {
         shieldOpacity.value = withTiming(0, {duration: 500});
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
   prompt: {
     fontFamily: FontFamily.serifItalic,
     fontSize: FontSize.lg,
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize.lg * 1.5,
   },
   input: {

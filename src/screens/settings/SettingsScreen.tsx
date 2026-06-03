@@ -8,6 +8,7 @@ import {
   Alert,
   Linking,
 } from 'react-native';
+import {Image} from 'react-native';
 import {Colors, FontFamily, FontSize, Spacing, BorderRadius} from '../../theme';
 import ScreenContainer from '../../components/common/ScreenContainer';
 import {useTranslation} from 'react-i18next';
@@ -104,6 +105,11 @@ export default function SettingsScreen() {
 
         {/* About */}
         <View style={styles.section}>
+          <Image
+            source={require('../../../assets/logo.png')}
+            style={styles.aboutLogo}
+            resizeMode="contain"
+          />
           <Text style={styles.sectionTitle}>{t('settings.about.title')}</Text>
           <Text style={styles.aboutDesc}>{t('settings.about.description')}</Text>
 
@@ -145,7 +151,7 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   section: {
     backgroundColor: Colors.surface,
@@ -179,7 +185,7 @@ const styles = StyleSheet.create({
     color: Colors.textSecondary,
   },
   langLabelSelected: {
-    color: Colors.cream,
+    color: Colors.textPrimary,
     fontFamily: FontFamily.sansMedium,
   },
   langCheck: {
@@ -193,6 +199,12 @@ const styles = StyleSheet.create({
     fontFamily: FontFamily.sans,
     fontSize: FontSize.base,
     color: Colors.error,
+  },
+  aboutLogo: {
+    width: 120,
+    height: 100,
+    alignSelf: 'center',
+    marginBottom: Spacing[2],
   },
   aboutDesc: {
     fontFamily: FontFamily.serifItalic,

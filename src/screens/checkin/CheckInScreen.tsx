@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   section: {
     backgroundColor: Colors.surface,
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     flex: 1,
     fontFamily: FontFamily.sansMedium,
     fontSize: FontSize.base,
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   doneTag: {
     color: Colors.terracotta,

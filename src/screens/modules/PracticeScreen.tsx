@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
   practiceText: {
     fontFamily: FontFamily.serif,
     fontSize: FontSize.lg,
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize.lg * 1.6,
   },
   divider: {

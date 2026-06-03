@@ -140,7 +140,7 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   screenSubtitle: {
     fontFamily: FontFamily.serifItalic,
@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
   cardTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize.md,
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   cardTitleLocked: {
     color: Colors.textMuted,

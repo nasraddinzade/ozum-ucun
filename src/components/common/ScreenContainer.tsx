@@ -27,7 +27,7 @@ export default function ScreenContainer({
   return (
     <SafeAreaView style={[styles.safe, style]} edges={edges}>
       <StatusBar
-        barStyle="light-content"
+        barStyle="dark-content"
         backgroundColor={Colors.background}
       />
       {scrollable ? (

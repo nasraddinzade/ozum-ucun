@@ -186,7 +186,7 @@ const styles = StyleSheet.create({
   question: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize.xl,
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize.xl * 1.4,
   },
   options: {gap: Spacing[3]},
@@ -267,7 +267,7 @@ const styles = StyleSheet.create({
   finishedTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
     textAlign: 'center',
   },
   finishedSub: {

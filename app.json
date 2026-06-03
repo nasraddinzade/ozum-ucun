@@ -6,12 +6,10 @@
     "orientation": "portrait",
     "scheme": "ozumucun",
     "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#1A0A10"
-    },
+    "backgroundColor": "#F3E8D7",
+    "userInterfaceStyle": "light",
     "android": {
+      "backgroundColor": "#F3E8D7",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#F2E3D0"
@@ -32,6 +30,15 @@
         {
           "color": "#4A1A2C",
           "sounds": []
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/logo.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#F3E8D7"
         }
       ]
     ],

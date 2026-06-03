@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   prompt: {
     fontFamily: FontFamily.serifItalic,
     fontSize: FontSize.lg,
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize.lg * 1.5,
   },
   divider: {

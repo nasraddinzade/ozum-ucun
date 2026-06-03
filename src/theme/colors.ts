@@ -1,50 +1,59 @@
 export const Colors = {
-  // Brand palette
-  burgundy: '#4A1A2C',
-  burgundyLight: '#6B2A40',
-  burgundyDark: '#2D0F1A',
+  // ─── Brand palette (from the official logo) ──────────────────────────────────
+  burgundy: '#6B2A40',
+  burgundyLight: '#834054',
+  burgundyDark: '#4A1A2C',
   terracotta: '#B8671B',
-  terracottaLight: '#D4844A',
-  terracottaDark: '#8A4D12',
-  cream: '#F4EFE8',
-  creamDark: '#E8E0D4',
-  creamDarker: '#D4C8B8',
+  terracottaLight: '#CE8038',
+  terracottaDark: '#8A4D14',
+  sage: '#6E7253', // NEW — from the logo's leaves
+  sageLight: '#8A8E6E',
+  sageDark: '#545840',
+  cream: '#F2E3D0',
+  creamLight: '#FBF5EC',
+  creamDark: '#E6D5BE',
+  creamDarker: '#D9C5A9',
 
-  // Semantic
-  background: '#1A0A10',
-  surface: '#2A1020',
-  surfaceElevated: '#3A1828',
-  border: '#5A2A3C',
-  borderLight: '#6A3A4C',
+  // ─── Semantic — LIGHT theme ──────────────────────────────────────────────────
+  background: '#F3E8D7', // warm cream background
+  surface: '#FBF5EC', // cards — soft warm white
+  surfaceElevated: '#FFFCF6',
+  border: '#E4D5BF',
+  borderLight: '#EFE3D1',
 
-  // Text
-  textPrimary: '#F4EFE8',
-  textSecondary: '#C8B8AC',
-  textMuted: '#8A7A72',
-  textOnDark: '#F4EFE8',
+  // ─── Text — dark espresso on cream ───────────────────────────────────────────
+  textPrimary: '#3A2A22',
+  textSecondary: '#6E5C4E',
+  textMuted: '#A08D7C',
+  textOnDark: '#FBF4EA',
 
-  // Accent
-  gold: '#C9A84C',
-  goldLight: '#E8C870',
-  rose: '#C4607A',
-  roseLight: '#D4809A',
+  // Light text for placing ON colored buttons / dark banners
+  onAccent: '#FBF4EA',
 
-  // States
-  success: '#6B9E6B',
-  error: '#C4504A',
-  warning: '#C9903C',
+  // ─── Accent ──────────────────────────────────────────────────────────────────
+  gold: '#8F6D16',
+  goldLight: '#B0892A',
+  rose: '#B0556E',
+  roseLight: '#C46F86',
 
-  // Heart colors (for healing progress)
-  heartBroken: '#3A1828',
-  heartHealing: '#8A3A50',
+  // ─── States ──────────────────────────────────────────────────────────────────
+  success: '#5E7A4E',
+  error: '#B0463F',
+  warning: '#A8761E',
+
+  // ─── Heart (single whole heart that grows with progress) ─────────────────────
+  heartColor: '#C4506A',
+  heartColorSoft: '#D88AA0',
+  heartBroken: '#D9B7BE',
+  heartHealing: '#C4506A',
   heartWhole: '#B8671B',
 
-  // Gamification
-  xpColor: '#C9A84C',
+  // ─── Gamification ────────────────────────────────────────────────────────────
+  xpColor: '#8F6D16',
   levelColor: '#B8671B',
-  badgeColor: '#C9A84C',
+  badgeColor: '#8F6D16',
 
-  // Transparent
-  overlay: 'rgba(26, 10, 16, 0.85)',
-  overlayLight: 'rgba(26, 10, 16, 0.5)',
+  // ─── Transparent ─────────────────────────────────────────────────────────────
+  overlay: 'rgba(58, 42, 34, 0.45)',
+  overlayLight: 'rgba(58, 42, 34, 0.18)',
 };

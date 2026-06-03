@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize['2xl'] * 1.25,
   },
   callout: {
@@ -148,7 +148,7 @@ const styles = StyleSheet.create({
   calloutText: {
     fontFamily: FontFamily.serifItalic,
     fontSize: FontSize.md,
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize.md * 1.6,
   },
   calloutAttrib: {

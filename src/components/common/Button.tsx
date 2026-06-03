@@ -77,7 +77,7 @@ export default function Button({
       activeOpacity={1}>
       {loading ? (
         <ActivityIndicator
-          color={variant === 'primary' ? Colors.cream : Colors.terracotta}
+          color={variant === 'primary' ? Colors.onAccent : Colors.terracotta}
           size="small"
         />
       ) : (
@@ -119,7 +119,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   labelPrimary: {
-    color: Colors.cream,
+    color: Colors.onAccent,
   },
   labelSecondary: {
     color: Colors.terracotta,
@@ -128,6 +128,6 @@ const styles = StyleSheet.create({
     color: Colors.textSecondary,
   },
   labelDanger: {
-    color: Colors.cream,
+    color: Colors.onAccent,
   },
 });

@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize['2xl'] * 1.3,
   },
   subtitle: {
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   optionTextSelected: {
-    color: Colors.cream,
+    color: Colors.textPrimary,
     fontFamily: FontFamily.sansMedium,
   },
   cta: {

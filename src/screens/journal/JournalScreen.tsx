@@ -161,7 +161,7 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   exportBtn: {
     fontFamily: FontFamily.sans,

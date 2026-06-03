@@ -180,7 +180,7 @@ const styles = StyleSheet.create({
   title: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['3xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
     lineHeight: FontSize['3xl'] * 1.2,
   },
   quoteBlock: {
@@ -266,7 +266,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   nextBadgeText: {
-    color: Colors.cream,
+    color: Colors.onAccent,
     fontSize: FontSize.base,
   },
   cta: {marginBottom: Spacing[4]},

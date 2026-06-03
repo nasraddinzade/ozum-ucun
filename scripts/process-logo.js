@@ -243,19 +243,25 @@ console.log('Creating adaptive-icon.png (1024x1024, RGBA)...');
 const adaptive1024 = resample(srcPixels, srcW, srcH, 1024, 1024);
 fs.writeFileSync(path.join(assetsDir, 'adaptive-icon.png'), writePNG(adaptive1024, 1024, 1024, true));
 
-// 3. splash.png — 1284x2778 (iPhone 14 Pro Max, also good for Android)
-console.log('Creating splash.png (1284x2778)...');
-const splashPixels = makeSplash(srcPixels, srcW, srcH, 1284, 2778, darkR, darkG, darkB);
+// 3. splash.png — 1284x2778, logo centered on CREAM background (matches app theme)
+console.log('Creating splash.png (1284x2778, cream bg)...');
+const splashPixels = makeSplash(srcPixels, srcW, srcH, 1284, 2778, bgR, bgG, bgB);
 fs.writeFileSync(path.join(assetsDir, 'splash.png'), writePNG(splashPixels, 1284, 2778, false));
 
-// 4. favicon.png — 48x48 (for web, optional)
+// 4. logo.png — 512x512, full logo (with wordmark) for in-app use (Welcome, Settings)
+console.log('Creating logo.png (512x512)...');
+const logo512 = resample(srcPixels, srcW, srcH, 512, 512);
+fs.writeFileSync(path.join(assetsDir, 'logo.png'), writePNG(logo512, 512, 512, true));
+
+// 5. favicon.png — 48x48 (for web, optional)
 console.log('Creating favicon.png (48x48)...');
 const favicon48 = resample(srcPixels, srcW, srcH, 48, 48);
 const faviconFlat = compositeOnBg(favicon48, 48, 48, bgR, bgG, bgB);
 fs.writeFileSync(path.join(assetsDir, 'favicon.png'), writePNG(faviconFlat, 48, 48, false));
 
 console.log('\n✅ All icons created:');
-console.log('  assets/icon.png          — 1024x1024 (Play Store, App Store)');
+console.log('  assets/icon.png          — 1024x1024 (Play Store / launcher)');
 console.log('  assets/adaptive-icon.png — 1024x1024 (Android adaptive icon)');
-console.log('  assets/splash.png        — 1284x2778 (Splash screen)');
+console.log('  assets/splash.png        — 1284x2778 (Splash, cream bg)');
+console.log('  assets/logo.png          — 512x512   (in-app logo)');
 console.log('  assets/favicon.png       — 48x48     (Web)');

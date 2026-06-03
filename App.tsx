@@ -1,13 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet, ActivityIndicator} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+import {View, Text, StyleSheet} from 'react-native';
+import {NavigationContainer, DefaultTheme} from '@react-navigation/native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import * as SplashScreen from 'expo-splash-screen';
 import {initDatabase, getUser} from './src/database';
 import {initI18n} from './src/locales/i18n';
 import {useUserStore} from './src/store/userStore';
 import {useModuleStore} from './src/store/moduleStore';
 import AppNavigator from './src/navigation/AppNavigator';
 import {Colors, FontFamily, FontSize} from './src/theme';
+
+// Keep the native splash (logo on cream) visible until our data is ready.
+// This replaces any default Expo logo flash with our own branded splash.
+SplashScreen.preventAutoHideAsync().catch(() => {});
 
 function BootLoader() {
   const [ready, setReady] = useState(false);
@@ -35,6 +40,9 @@ function BootLoader() {
       } catch (e) {
         console.error('Boot error', e);
         setError(String(e));
+      } finally {
+        // Hide the native splash now that the UI is ready to render.
+        await SplashScreen.hideAsync().catch(() => {});
       }
     }
     boot();
@@ -49,25 +57,29 @@ function BootLoader() {
   }
 
   if (!ready) {
-    return (
-      <View style={styles.splash}>
-        <Text style={styles.splashTitle}>Özüm üçün</Text>
-        <ActivityIndicator
-          color={Colors.terracotta}
-          size="small"
-          style={styles.loader}
-        />
-      </View>
-    );
+    // Native splash is still covering the screen; render nothing underneath.
+    return <View style={styles.splash} />;
   }
 
   return <AppNavigator />;
 }
 
+const navTheme = {
+  ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    background: Colors.background,
+    card: Colors.surface,
+    text: Colors.textPrimary,
+    border: Colors.border,
+    primary: Colors.terracotta,
+  },
+};
+
 export default function App() {
   return (
     <SafeAreaProvider>
-      <NavigationContainer>
+      <NavigationContainer theme={navTheme}>
         <BootLoader />
       </NavigationContainer>
     </SafeAreaProvider>
@@ -91,17 +103,5 @@ const styles = StyleSheet.create({
   splash: {
     flex: 1,
     backgroundColor: Colors.background,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 24,
-  },
-  splashTitle: {
-    fontFamily: FontFamily.serifBold,
-    fontSize: FontSize['3xl'],
-    color: Colors.cream,
-    letterSpacing: -0.5,
-  },
-  loader: {
-    marginTop: 8,
   },
 });

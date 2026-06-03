@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize['2xl'],
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   heartSection: {
     flexDirection: 'row',
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   heartState: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize.lg,
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   levelCard: {
     backgroundColor: Colors.surface,
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
   levelName: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize.xl,
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   levelDesc: {
     fontFamily: FontFamily.serifItalic,
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
   statValue: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize.xl,
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   statLabel: {
     fontFamily: FontFamily.sans,
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontFamily: FontFamily.serifBold,
     fontSize: FontSize.lg,
-    color: Colors.cream,
+    color: Colors.textPrimary,
   },
   noBadges: {
     fontFamily: FontFamily.serifItalic,
