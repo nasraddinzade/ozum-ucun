@@ -26,7 +26,7 @@ export function initI18n(savedLanguage?: string) {
   const lng = (savedLanguage as SupportedLanguage) || getDeviceLanguage();
 
   i18n.use(initReactI18next).init({
-    compatibilityJSON: 'v4',
+    compatibilityJSON: 'v3',
     resources: {
       az: {translation: az},
       en: {translation: en},
