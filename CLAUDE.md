@@ -7,6 +7,10 @@
   `git push`, branch creation, etc. directly via the Bash/PowerShell tools.
   The remote is already configured.
 - The user prefers to be told what was done, not asked to do it.
+- **Do NOT build an APK unless the user explicitly asks ("сделай apk").**
+  After code changes, just verify the result by running on the Android
+  emulator (install, drive the flow, screenshot). Skip `assembleRelease`/APK
+  packaging until requested.
 
 ## Repository
 
